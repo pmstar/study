@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="general.js"></script>
+</head>
+<body>
+	<div class="main">
+		<div>
+			<label>
+				<span>会员名：</span><input type="text" name="" class="text">
+			</label>
+			<p class="msg"  style="display: none;"><i class="ati"></i>5-25个字符，一个汉字为两个字符，推荐使用中文会员名</p>
+		</div>
+		<div>
+			<label><span></span><b id="count" style="visibility: hidden;">0个字符</b></label>
+		</div>
+
+		<div>
+			<label>
+				<span>登陆密码：</span><input type="password" name="" class="text">
+			</label>
+			<p class="msg"><i class="err"></i></p>
+		</div>
+
+		<div style="margin: 3px 0 10px 0">
+			<label>
+				<span></span>
+				<em class="active">弱</em><em>中</em><em>中</em><em>强</em>
+			</label>
+		</div>
+
+		<div style="margin-bottom: 20px">
+			<label>
+				<span>确认密码：</span><input type="password" class="text">
+			</label>
+			<p class="msg"><i class="err"></i></p>
+		</div>
+
+		<div>
+			<label>
+				<span>验证码：</span><input type="text" name="" class="text" style="width: 50px">
+				<img src="" width="100" height="30">
+				<a href="javascript:;" title="重新获取验证码" class="changeImg"></a>
+			</label>
+		</div>
+		<div>
+			<input class="submitBtn btn" type="submit" value="同意协议并注册" name="">
+		</div>
+	</div>
+
+</body>
+</html>
